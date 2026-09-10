@@ -76,6 +76,7 @@
 ## v0.1.44（社区测试版）修复记录
 
 - 修复：Temple 等原版段落中的 `SydneyPack.*` 调用全部加全局守卫，避免开局直接落在 Temple 时抛 `ReferenceError: SydneyPack is not defined`；
+- 修复：性奋显示 `number NaN`——做爱段落对 `nnpcArousalMult` 的乘法已加默认值守卫，并新增页面级 NaN 自愈（arousal / enemyarousal / enemyarousalmax 等异常值自动修回安全值），旧档也可恢复；
 - 顺带修复了打包时的一处 JSON 转义问题（重新打包覆盖）。
 
 反馈时建议附上：
